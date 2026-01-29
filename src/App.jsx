@@ -1,10 +1,15 @@
 import "./index.css";
+import Navbar from "./layouts/Navabar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div className="bg-background">
+      <Navbar />
+      <Hero />
+      <About />
+    </div>
   );
 }
 
