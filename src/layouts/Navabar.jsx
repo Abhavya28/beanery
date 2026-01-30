@@ -9,7 +9,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setisMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,26 +23,28 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 right-0 left-0 transition-all duration-500 ${
-        isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
-      }  z-50`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? "glass-strong py-3 shadow-lg" : "bg-transparent py-5"
+      }`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
+        {/* Logo */}
         <a
           href="#"
-          className="text-xl font-bold tracking-tight hover:text-primary"
+          className="text-2xl md:text-3xl font-bold text-primary tracking-tight hover:text-primary-foreground transition-colors"
         >
           Beanery
         </a>
 
-        {/*Desktop Nav */}
-        <div className="hidden md:flex items-center gap-1">
-          <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-4">
+          <div className="glass rounded-full px-3 py-2 flex items-center gap-2">
             {navLinks.map((link, index) => (
               <a
                 href={link.href}
                 key={index}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                className="px-4 py-2 text-sm text-muted-foreground rounded-full 
+                text-primary hover:text-primary-foreground hover:bg-surface transition-all"
               >
                 {link.label}
               </a>
@@ -52,15 +54,15 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <button>
+          <button className="bg-primary text-primary-foreground px-4 py-2 rounded-full transition-colors">
             <a href="#">Get Directions</a>
           </button>
         </div>
 
-        {/* Mobile Menu Button*/}
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2 text-foreground cursor-pointer"
-          onClick={() => setisMobileMenuOpen((prev) => !prev)}
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -74,14 +76,17 @@ const Navbar = () => {
               <a
                 href={link.href}
                 key={index}
-                onClick={() => setisMobileMenuOpen(false)}
-                className="text-lg text-muted-foreground hover:text-foreground py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-lg text-primary hover:text-primary-foreground py-2 transition-colors"
               >
                 {link.label}
               </a>
             ))}
 
-            <button onClick={() => setisMobileMenuOpen(false)}>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-primary text-primary-foreground px-4 py-2 rounded-full hover:bg-primary/80 transition-colors"
+            >
               <a href="#">Get Directions</a>
             </button>
           </div>

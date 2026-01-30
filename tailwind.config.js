@@ -14,6 +14,9 @@ export default {
         secondary: "var(--color-secondary)",
         'secondary-foreground': "var(--color-secondary-foreground)",
       },
+      fontFamily: {
+        serif: ["Playfair Display", "serif"],
+      },
     },
   },
   plugins: [],

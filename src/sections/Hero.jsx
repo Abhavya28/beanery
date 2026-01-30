@@ -1,39 +1,30 @@
 import React from "react";
 import Button from "../components/Button";
 
+
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-15 items-center">
-          {/* Left Coloumn - Text */}
-          <div className="space-y-8">
-            {/* Headline */}
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Your Cozy Corner for
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                  Coffee & Conversations
-                </span>
-              </h1>
-            </div>
+    <div
+      className="relative min-h-screen flex items-center justify-center bg-background bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/bg.jpg')" }}
+    >
+      {/* Overlay for darker effect */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button>
-                <a href="#contact">Make a reservation</a>
-              </Button>
-            </div>
-          </div>
-          {/* Right Image */}
-          <div className="relative flex items-end justify-center w-full h-full pt-10">
-            {/* Circle Background */}
-            {/* <div className="relative w-64 h-64 rounded-full bg-primary shadow-lg mx-auto overflow-visible"> */}
-            {/* Chef Image - popping out */}
-            <img src="/images/chef.png" alt="Chef" />
-          </div>
+      {/* Content */}
+      <div className="relative text-center px-6 z-10">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100 text-foreground ">
+          Your Cozy Corner for
+          <br />
+          <span className="font-serif italic font-normal text-white">
+            Coffee & Conversations
+          </span>
+        </h1>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-4 animate-fade-in animation-delay-300">
+          <Button>
+            <a href="#contact">Make a reservation</a>
+          </Button>
         </div>
       </div>
     </div>
