@@ -24,6 +24,7 @@ const About = () => {
         </div>
 
       </div>
+      <hr className="text-black font-bold" />
     </section>
   );
 };

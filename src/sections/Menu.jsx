@@ -121,12 +121,12 @@ const Menu = () => {
   const [activeTab, setActiveTab] = useState("appetizers");
 
   return (
-    <section id="menu" className="py-24">
+    <section id="menu" className="py-20">
       <div className="container mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold glow-text">
+          <h2 className="text-4xl md:text-5xl font-bold glow-text text-background">
             Our Menu
           </h2>
         </div>
