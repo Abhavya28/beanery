@@ -16,8 +16,8 @@
 
 @layer base {
   body {
-    @apply font-serif;
-  }
+  font-family: "Poppins";
+}
 }
 
 

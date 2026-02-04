@@ -15,7 +15,7 @@ export default {
         'secondary-foreground': "var(--color-secondary-foreground)",
       },
       fontFamily: {
-        serif: ["Playfair Display", "serif"],
+        serif: ["Poppins"],
       },
     },
   },

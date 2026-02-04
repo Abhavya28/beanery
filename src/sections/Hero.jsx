@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../components/Button";
 
 
@@ -22,7 +21,7 @@ const Hero = () => {
         </h1>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4 animate-fade-in animation-delay-300">
-          <Button>
+          <Button className="bg-white text-background">
             <a href="#contact">Make a reservation</a>
           </Button>
         </div>
