@@ -124,25 +124,24 @@ const Menu = () => {
     <section id="menu" className="py-20">
       <div className="container mx-auto px-6">
 
-        {/* Heading */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-14 flex flex-col items-center gap-4">
           <h2 className="text-4xl md:text-5xl font-bold glow-text text-background">
             Our Menu
           </h2>
+          <p className="text-gray-700 text-2xl">Our Menu is Carefully Curated Selection Of Delicious Masterpieces</p>
         </div>
 
-        {/* Category Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-14">
           {["appetizers", "main", "desserts", "beverages", "snacks"].map(
             (tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-6 py-2 rounded-full text-sm transition-all duration-800 bg-background text-primary
+                className={`px-6 py-2 rounded-full text-sm transition-all duration-800 border-2 border-background
                   ${
                     activeTab === tab
-                      ? "bg-secondary text-primary-foreground glow-border"
-                      : "glass hover:bg-surface"
+                      ? "bg-background text-secondary-foreground glow-border"
+                      : "border-1 border-background"
                   }`}
               >
                 {tab === "main" ? "Main Course" : tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -151,7 +150,6 @@ const Menu = () => {
           )}
         </div>
 
-        {/* Menu Items */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-in">
           {menuData[activeTab].map((item, index) => (
             <div
