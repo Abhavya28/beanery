@@ -118,7 +118,7 @@ const menuData = {
 };
 
 const Menu = () => {
-  const [activeTab, setActiveTab] = useState("appetizers");
+  const [activeTab, setActiveTab] = useState("desserts");
 
   return (
     <section id="menu" className="py-20">
@@ -141,7 +141,7 @@ const Menu = () => {
                   ${
                     activeTab === tab
                       ? "bg-background text-secondary-foreground glow-border"
-                      : "border-1 border-background"
+                      : " border-1 border-background"
                   }`}
               >
                 {tab === "main" ? "Main Course" : tab.charAt(0).toUpperCase() + tab.slice(1)}
