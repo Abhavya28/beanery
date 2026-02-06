@@ -36,7 +36,7 @@ const Services = () => {
             </h1>
             <p className="text-gray-600 max-w-lg leading-relaxed">
               Thoughtfully crafted experiences designed to make every visit to
-              Beanery Café warm, memorable, and comforting.
+              Beanery Café warm, memorable and comforting.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ const Services = () => {
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
                   Settle into our cozy space with calming interiors, friendly
-                  service, and a peaceful atmosphere perfect for every mood.
+                  service and a peaceful atmosphere perfect for every mood.
                 </p>
               </div>
             </div>

@@ -175,7 +175,7 @@ const Menu = () => {
             </div>
           ))}
         </div>
-
+  
       </div>
     </section>
   );
