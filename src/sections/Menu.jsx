@@ -122,11 +122,11 @@ const Menu = () => {
 
   return (
     <section id="menu" className="py-20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-20">
 
         <div className="text-center mb-14 flex flex-col items-center gap-4">
           <h2 className="text-4xl md:text-5xl font-bold glow-text text-background">
-            Our Menu
+            Our Favourites Menu
           </h2>
           <p className="text-gray-700 text-2xl">Our Menu is Carefully Curated Selection Of Delicious Masterpieces</p>
         </div>
