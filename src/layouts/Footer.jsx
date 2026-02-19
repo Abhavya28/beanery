@@ -65,7 +65,8 @@ const Footer = () => {
               Beanery
             </h3>
             <p className="text-sm leading-relaxed">
-              Your Cozy Corner for Coffee & Conversations
+              Your Cozy Corner for Coffee & Conversations.We create a warm and welcoming space where you can
+            savor freshly brewed coffee, delectable pastries, and good company.
             </p>
           </div>
 
@@ -96,6 +97,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-2">Contact us</h3>
             <p className="space-y-1 text-sm">
               Sector 26, Chandigarh,
+              <br />
+              +91 9876543210
             </p>
           </div>
         </div>

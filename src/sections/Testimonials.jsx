@@ -7,23 +7,24 @@ import "swiper/css/pagination";
 const customersReview = [
   {
     id: 1,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo augue nibh est nisi, ultricies. Consectetur et faucibus vivamus lorem hendrerit enim donec ut. Nec blandit vulputate varius at quis non. ",
+    desc: "The coffee at Beanery is incredible! Every cup feels freshly brewed, and the cozy atmosphere makes it my favorite spot to relax with friends.",
     img: "/images/Archie.png",
     name: "Archie Kerry",
   },
   {
     id: 2,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo augue nibh est nisi, ultricies. Consectetur et faucibus vivamus lorem hendrerit enim donec ut. Nec blandit vulputate varius at quis non. ",
-    img: "/images/Archie.png",
-    name: "Archie Kerry",
+    desc: "I love visiting Beanery! The pastries are always fresh, and the staff is so friendly. It’s the perfect place to spend a quiet afternoon.",
+    img: "/images/Kenneth.png",
+    name: "Kenneth Johnson",
   },
   {
     id: 3,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo augue nibh est nisi, ultricies. Consectetur et faucibus vivamus lorem hendrerit enim donec ut. Nec blandit vulputate varius at quis non. ",
-    img: "/images/Archie.png",
-    name: "Archie Kerry",
+    desc: "Beanery never disappoints! From the rich aroma of coffee to the warm ambiance, every visit feels special. Highly recommended!",
+    img: "/images/Malanie.png",
+    name: "Malanie Smith",
   },
 ];
+
 const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20">

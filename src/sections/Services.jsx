@@ -25,10 +25,9 @@ const Services = () => {
                           max-w-[90%] sm:max-w-sm"
           >
             <p className="text-gray-600 text-sm leading-relaxed mb-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa
-              turpis pulvinar interdum in imperdiet pellentesque.
+              Every cup of coffee is crafted with care, and every corner is designed for comfort. Relax, savor the flavors, and enjoy moments made just for you.
             </p>
-            <p className="font-semibold text-sm text-gray-800">Alen Barg</p>
+            <p className="font-semibold text-sm text-gray-800">- Beanery</p>
           </div>
         </div>
 
@@ -41,14 +40,12 @@ const Services = () => {
 
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Best quality food and <br /> coffee maker
+            Experience the Perfect Blend of Taste & Ambience
           </h1>
 
           {/* Description */}
           <p className="text-gray-600 leading-relaxed max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            diam pellentesque bibendum non dui volutpat fringilla bibendum.
-            Urna, elit augue urna, vitae feugiat donec id elementum.
+           At Beanery, we combine the finest coffee beans with a cozy, inviting atmosphere. Every cup is brewed to perfection, and every dish is prepared with care. Whether it's a casual catch-up or a special occasion, Beanery is the place where flavors meet comfort.
           </p>
 
           {/* FEATURES */}
@@ -58,9 +55,9 @@ const Services = () => {
                 <img src="/images/coffee-icon.svg" alt="" className="h-10" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg">High quality coffee</h3>
+                <h3 className="font-semibold text-lg">High-Quality coffee</h3>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Sourced from premium beans and roasted to perfection, every sip is a journey of rich flavor and aroma
                 </p>
               </div>
             </div>
@@ -70,9 +67,9 @@ const Services = () => {
                 <img src="/images/chef-icon.svg" alt="" className="h-10" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg">Best chef & team</h3>
+                <h3 className="font-semibold text-lg">Talented Chef & Friendly Team</h3>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Our passionate chefs and welcoming staff make every visit memorable, serving delicious food with a smile.
                 </p>
               </div>
             </div>
@@ -82,9 +79,9 @@ const Services = () => {
                 <img src="/images/deal-icon.svg" alt="" className="h-10" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg">Promo and deal</h3>
+                <h3 className="font-semibold text-lg">Exclusive Promos & Seasonal Specials</h3>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Enjoy our curated offers, seasonal drinks, and treats that make every visit extra special.
                 </p>
               </div>
             </div>
