@@ -5,6 +5,7 @@ import About from "./sections/About";
 import Menu from "./sections/Menu";
 import Services from "./sections/Services";
 import Testimonials from "./sections/Testimonials";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Menu />
       <Services />
       <Testimonials />
+      <Footer />
     </div>
   );
 }

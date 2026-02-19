@@ -3,7 +3,7 @@ import Button from "../components/Button";
 const Hero = () => {
   return (
     <div
-      className="relative min-h-screen flex items-center bg-background bg-cover bg-center"
+      id="hero" className="relative min-h-screen flex items-center bg-background bg-cover bg-center"
       style={{ backgroundImage: "url('/images/bg-hero.png')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
