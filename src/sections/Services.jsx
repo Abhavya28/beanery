@@ -2,7 +2,8 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-24">
+   <section id="menu" className="py-20">
+      <div className="container mx-auto px-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* LEFT IMAGE SECTION */}
         <div className="relative w-full max-w-xl lg:max-w-2xl mx-auto lg:mx-0">
@@ -89,6 +90,7 @@ const Services = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -42,3 +42,18 @@
       inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
 }
+
+.testimonial-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  background-color: #9ca3af; 
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
