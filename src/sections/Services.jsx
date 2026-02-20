@@ -27,7 +27,7 @@ const Services = () => {
             <p className="text-gray-600 text-sm leading-relaxed mb-3">
               Every cup of coffee is crafted with care, and every corner is designed for comfort. Relax, savor the flavors, and enjoy moments made just for you.
             </p>
-            <p className="font-semibold text-sm text-gray-800">- Beanery</p>
+            <p className="font-semibold text-sm text-[#1A1110]">- Beanery</p>
           </div>
         </div>
 
@@ -39,7 +39,7 @@ const Services = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1A1110] leading-tight">
             Experience the Perfect Blend of Taste & Ambience
           </h1>
 

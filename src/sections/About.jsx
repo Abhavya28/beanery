@@ -3,7 +3,6 @@ import Button from "../components/Button";
 const About = () => {
   return (
     <section className="max-w-6xl mx-auto px-4" id="about">
-
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2">
           <div className="overflow-hidden rounded-lg aspect-square">
@@ -32,9 +31,11 @@ const About = () => {
             the passion we pour into every cup at Beanery Café.
           </p>
           <br />
-          <Button className="bg-background text-white rounded-sm">
-            <a href="#services">Find More</a>
-          </Button>
+          <div className="flex items-center justify-center">
+            <Button className="bg-background text-white rounded-sm">
+              <a href="#services">Find More</a>
+            </Button>
+          </div>
         </div>
       </div>
       <hr />

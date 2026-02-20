@@ -30,7 +30,7 @@ const Testimonials = () => {
     <section id="testimonials" className="py-20">
       <div className="container mx-auto px-2 md:px-20 grid grid-cols-1 md:grid-cols-2">
         {/* Left */}
-        <div className="bg-[#1e1e1e] p-6 text-white flex flex-col items-center">
+        <div className="bg-[#1A1110] p-6 text-white flex flex-col items-center opacity-2">
           <p>Testimonials</p>
           <h1 className="text-3xl font-bold text-center">Our Customer say</h1>
           <img src="/images/Quotes.svg" alt="Quotes" className="my-4" />
