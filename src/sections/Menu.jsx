@@ -1,4 +1,10 @@
+// 
+
+
+
+
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const menuData = {
   appetizers: [
@@ -33,11 +39,16 @@ const menuData = {
   ],
 };
 
+const tabs = ["appetizers", "main", "desserts", "beverages", "snacks"];
+
 const Menu = () => {
   const [activeTab, setActiveTab] = useState("desserts");
 
   return (
-    <section id="menu" className="py-16 sm:py-20">
+    <section
+      id="menu"
+      className="py-16 sm:py-20"
+    >
       <div className="container mx-auto px-4 sm:px-8 lg:px-20">
 
         {/* Heading */}
@@ -52,18 +63,14 @@ const Menu = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex overflow-x-auto no-scrollbar justify-start sm:justify-center gap-3 mb-10 sm:mb-14 pb-2">
-          {["appetizers", "main", "desserts", "beverages", "snacks"].map((tab) => (
+        <div className="relative flex overflow-x-auto no-scrollbar justify-start sm:justify-center gap-3 mb-10 sm:mb-14 pb-2">
+          {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`whitespace-nowrap px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm 
               transition-all duration-300 border border-background
-              ${
-                activeTab === tab
-                  ? "bg-background text-secondary-foreground glow-border"
-                  : "bg-transparent hover:bg-background/10"
-              }`}
+              ${activeTab === tab ? "bg-background text-secondary-foreground glow-border" : "bg-transparent hover:bg-background/10"}`}
             >
               {tab === "main"
                 ? "Main Course"
@@ -73,34 +80,36 @@ const Menu = () => {
         </div>
 
         {/* Menu Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 animate-fade-in">
-          {menuData[activeTab].map((item, index) => (
-            <div
-              key={index}
-              className="glass rounded-2xl overflow-hidden 
-              transition-all duration-300 
-              hover:scale-105 active:scale-95"
-            >
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-full h-44 sm:h-48 object-cover"
-              />
-
-              <div className="p-4 bg-background">
-                <div className="flex justify-between items-center">
-                  <h3 className="font-semibold text-base sm:text-lg text-primary">
-                    {item.name}
-                  </h3>
-                  <span className="text-primary font-semibold">
-                    {item.price}
-                  </span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <AnimatePresence mode="wait">
+            {menuData[activeTab].map((item, index) => (
+              <motion.div
+                key={item.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                whileHover={{ scale: 1.05, y: -5, boxShadow: "0 15px 25px rgba(0,0,0,0.15)" }}
+                whileTap={{ scale: 0.95 }}
+                className="glass rounded-2xl overflow-hidden transition-all duration-300"
+              >
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-44 sm:h-48 object-cover"
+                />
+                <div className="p-4 bg-background">
+                  <div className="flex justify-between items-center">
+                    <h3 className="font-semibold text-base sm:text-lg text-primary">
+                      {item.name}
+                    </h3>
+                    <span className="text-primary font-semibold">{item.price}</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
-
       </div>
     </section>
   );

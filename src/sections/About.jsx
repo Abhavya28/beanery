@@ -1,16 +1,35 @@
+import { motion } from "framer-motion";
 import Button from "../components/Button";
 
 const About = () => {
   return (
     <section className="max-w-6xl mx-auto px-4" id="about">
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 relative">
           <div className="overflow-hidden rounded-lg aspect-square">
-            <img
+            <motion.img
               src="/images/about.png"
               alt="Cafe"
               className="w-full h-full object-cover"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
+
+            {/* Steam Effects */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+              {[0, 1, 2].map((i) => (
+                <motion.div
+                  key={i}
+                  className="w-2 h-6 bg-white/50 rounded-full"
+                  animate={{ y: [-10, -40], opacity: [0.5, 0] }}
+                  transition={{
+                    duration: 2 + i * 0.5,
+                    repeat: Infinity,
+                    repeatDelay: 0.5,
+                  }}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
@@ -38,9 +57,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <hr />
+      <hr className="mt-8" />
     </section>
   );
 };
 
 export default About;
+
