@@ -6,7 +6,7 @@ import Menu from "./sections/Menu";
 import Services from "./sections/Services";
 import Testimonials from "./sections/Testimonials";
 import Footer from "./layouts/Footer";
-import Chatbot from "./ai-chatbot/chatbot";
+import Chatbot from "./ai-chatbot/Chatbot";
 
 function App() {
   return (
