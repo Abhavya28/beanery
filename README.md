@@ -19,7 +19,7 @@ Welcome to **Beanery**, a modern and responsive landing page for cafes and small
 
 ## 🌍 Live Demo
 
-You can view the live website here  
+You can view the live website here !
 [https://lumi-glow.vercel.app/](https://beanery.vercel.app/)
 
 ---
