@@ -1,7 +1,6 @@
-# Beanery – Cafe Landing Page
+# Beanery – Cafe Landing Page + AI Chatbot
 
-Welcome to **Beanery**, a modern and responsive landing page for cafes and small businesses. This project showcases a clean UI, interactive sliders, and smooth navigation to highlight products, deals, and services.
-
+A modern responsive Cafe Website built for cafes and small businesses with an AI Chatbot. Features a dynamic menu, cart functionality and responsive design for both desktop and mobile.
 ---
 
 ## 📸 Screenshots
@@ -29,7 +28,8 @@ You can view the live website here !
 - **React** – Frontend library for building UI components  
 - **Tailwind CSS** – Utility-first CSS framework for styling  
 - **Swiper** – Responsive sliders and carousels  
+- **DeepSeek AI** – Powerful open-source AI model  
+- **Framer Motion** – Animates React components beautifully.
 - **Lucide** – Simple, customizable SVG icons  
-
 ---
 
