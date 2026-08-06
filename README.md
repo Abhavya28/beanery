@@ -1,6 +1,7 @@
 # Beanery – Cafe Landing Page + AI Chatbot
 
 A modern responsive Cafe Website built for cafes and small businesses with an AI Chatbot. Features a dynamic menu, cart functionality and responsive design for both desktop and mobile.
+
 ---
 
 ## 📸 Screenshots
