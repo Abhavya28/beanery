@@ -20,6 +20,7 @@ A modern responsive Cafe Website built for cafes and small businesses with an AI
 ## 🌍 Live Demo
 
 You can view the live website here !
+
 [https://lumi-glow.vercel.app/](https://beanery.vercel.app/)
 
 ---
@@ -34,3 +35,4 @@ You can view the live website here !
 - **Lucide** – Simple, customizable SVG icons  
 ---
 
+**Abhavya Gupta**
